@@ -1,0 +1,33 @@
+README file: 
+
+Dongpu Jin
+3/30/2013
+
+Submitted Files: 
+- myresolver.c: The resolver source file. Iteratively resolve hostname.
+- endian.c: check the endianess of the machine. Resolver must run on 
+			a little endian machine. 
+- Makefile: invokded by typing make. Compile the program. 
+- Design_document.docx: the design document. 
+- sample.docx: test cases. 
+
+Compiling environment: UNL CSE Server. 
+
+Unzip: 
+$ unzip 855-pa2.zip
+$ cd pa2
+
+Check endianess: 
+$ gcc endian.c -o endian
+$ ./endian 
+The resolver needs to run on a little endian machine. The result 
+should be 1 (little endian). 
+
+Clean up: 
+$ make clean
+
+Compile: 
+$ make
+
+Run: 
+$ ./myresolver cse.unl.edu
